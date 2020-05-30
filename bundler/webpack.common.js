@@ -79,7 +79,35 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     'css-loader'
                 ]
-            }
+            },
+            // MODELS
+            {
+                test: /\.(gltf|glb|fbx|obj)$/,
+                use:
+                [
+                  {
+                    loader : 'file-loader',
+                    options:
+                    {
+                      outputPath: 'models/'
+                    }
+                  }
+                ]
+              },
+              // AUDIOS AND VIDEOS
+              {
+                test: /\.(mp3|mp4|ogg|webm)$/,
+                use:
+                [
+                  {
+                    loader : 'file-loader',
+                    options:
+                    {
+                      outputPath: 'assets/'
+                    }
+                  }
+                ]
+              }
             
         ]
     }

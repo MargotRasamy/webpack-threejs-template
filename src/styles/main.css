@@ -22,12 +22,13 @@ html
 }
 
 p{
-    color: rgb(220, 220, 220);
+    color: rgb(23, 23, 23);
     position: absolute;
     z-index: 2;
-    top: 20;
-    right: 20;
+    top: 0;
+    right:0;
     font-size: 30px;
+    padding:25px;
 }
 
 @font-face
